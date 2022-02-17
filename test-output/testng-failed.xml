@@ -8,6 +8,7 @@
           <include name="TC02_SortByPriceLowToHigh"/>
           <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="TC05_EnterTorontoAddressInCalculateDelivery"/>
         </methods>
       </class> <!-- DemoProject.CanadaDrives.AppTestsCases.RAM1500TestCases -->
     </classes>

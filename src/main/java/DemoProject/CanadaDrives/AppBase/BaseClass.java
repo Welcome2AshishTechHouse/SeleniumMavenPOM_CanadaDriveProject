@@ -22,6 +22,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.MediaEntityBuilder;
+import com.aventstack.extentreports.MediaEntityModelProvider;
+import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.opencsv.CSVReader;
 
@@ -35,6 +38,7 @@ public class BaseClass
 	protected static CSVReader reader;
 	protected static ExtentHtmlReporter reporter;
 	protected static ExtentReports extent;
+	protected static MediaEntityModelProvider abuildscreenshot;
 
 
 	
@@ -114,7 +118,7 @@ public class BaseClass
 	}
 	
 	public static ExtentReports CreateExtendReport() {
-		String reportpath = "C:\\Users\\Lenovo\\eclipse-workspaces\\DemoSeleniumFramework\\CanadaDrives\\target\\ExtentReports\\TestExtendReport.html";
+		String reportpath = System.getProperty("user.dir")+"./target/ExecutionAutomationTestReport.html";
 		reporter = new ExtentHtmlReporter(reportpath);
 		reporter.config().setDocumentTitle("Canada Drives End to End Automation Testing Report");
 		reporter.config().setReportName("Executed by Ashish Bhadauria");
@@ -127,16 +131,26 @@ public class BaseClass
 		return extent;
 	}
 
-	public static void screenshot(String screenshotName) {
+	public static String screenshot(String screenshotName) {
 		File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		String path = "C:\\Users\\Lenovo\\eclipse-workspaces\\DemoSeleniumFramework\\CanadaDrives\\target\\Screenshots"
-				+ screenshotName + ".png";
+		String path = "./target/screenshots/"+screenshotName+".png";
 		File impPath = new File(path);
 		try {
 			FileUtils.copyFile(src, impPath);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		return path;
 	}
 
+	public static  MediaEntityModelProvider getScreenshot(String Screenshotname) {
+		
+	     try {
+		 		String imppath ="."+screenshot(Screenshotname);
+				abuildscreenshot = 	MediaEntityBuilder.createScreenCaptureFromPath(imppath).build();
+			} catch (IOException e) {	
+				e.printStackTrace();
+			}
+			 return abuildscreenshot;
+	}
 }

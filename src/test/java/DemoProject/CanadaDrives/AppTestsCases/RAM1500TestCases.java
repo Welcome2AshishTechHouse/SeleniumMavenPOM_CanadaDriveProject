@@ -35,7 +35,9 @@ public class RAM1500TestCases  extends BaseClass {
 		ExtentTest logger = extent.createTest("Verify Naviagted to CanadaDrive Page and selected the Ontario Province");
 		String provinceValue  = properties.getProperty("Province");
 		vehicleInvPageObj.province(provinceValue, logger);
+		logger.log(Status.INFO, "selected the Ontario Province" ,  getScreenshot("TC01_NavigateToURLandSelectOntarioProvince"));
 		logger.log(Status.PASS, "Provice Changed to "+provinceValue);
+		
 	}
 	
 	@Test(priority =1)
@@ -44,6 +46,7 @@ public class RAM1500TestCases  extends BaseClass {
 		Thread.sleep(3000);
 		String SortingBy=properties.getProperty("SortingBy");
 		vehicleInvPageObj.sort(SortingBy, logger);
+		logger.log(Status.INFO, " Sort By Price Low to High" ,  getScreenshot("TC02_SortByPriceLowToHigh"));
 		logger.log(Status.PASS, "Sorted By  "+SortingBy);
 	}
 	
@@ -55,6 +58,7 @@ public class RAM1500TestCases  extends BaseClass {
 		String SecondFilterValue=csvdata[2];
 		String ThirdFilterValue=csvdata[3];
 		vehicleInvPageObj.Filter(FilterValue, SecondFilterValue,ThirdFilterValue, logger);	
+		logger.log(Status.INFO, " Apply Filter RAM 1500 Vehicles" ,  getScreenshot("TC07_ApplyFilterRAM1500"));
 		logger.log(Status.PASS, "Filter By  "+FilterValue+"/"+SecondFilterValue+"/"+ThirdFilterValue);
 	}
 	
@@ -64,6 +68,7 @@ public class RAM1500TestCases  extends BaseClass {
 		vehicleInvPageObj.Select_fav(3, logger);
 		Thread.sleep(3000); 
 		vehicleInvPageObj.Verify_favCount(3, logger);
+		logger.log(Status.INFO, " Apply Favorite" ,  getScreenshot("TC03_Favorite3Ram1500Vehicles"));
 		logger.log(Status.PASS, "Selected Fav first 3 RAM 1500 Vehicles");
 	}
 	
@@ -72,6 +77,7 @@ public class RAM1500TestCases  extends BaseClass {
 		ExtentTest logger = extent.createTest("Pick An Available Ram 1500 Vehicle And Click On Purchase");
 		payCalculationPageObj=vehicleInvPageObj.selectVehicle(logger);
 		Thread.sleep(2000);
+		logger.log(Status.INFO, " Pick An Available Ram 1500 Vehicle And Click On Purchase" ,  getScreenshot("TC04_PickAnAvailableRam1500VehicleAndClickOnPurchase"));
 		logger.log(Status.PASS, "Pick An Available Ram 1500 Vehicle And Click On Purchase");
 	}
 	
@@ -80,6 +86,7 @@ public class RAM1500TestCases  extends BaseClass {
 		ExtentTest logger = extent.createTest("Enter Toronto Address In Calculate Delivery");
 		String Address=properties.getProperty("Address");
 		payCalculationPageObj.PaymentCalculateDelivery(Address, logger);	
+		logger.log(Status.INFO, " Pick Toronto Address In Calculate Delivery" ,  getScreenshot("TC05_EnterTorontoAddressInCalculateDelivery"));
 		logger.log(Status.PASS, "Enter Toronto Address In Calculate Delivery");
 	}
 	
@@ -89,6 +96,7 @@ public class RAM1500TestCases  extends BaseClass {
 		//String WarrantyPeriod=properties.getProperty("WarrantyPeriod");
 	String WarrantyPeriod=csvdata[4];
 		payCalculationPageObj.EditWarranty(WarrantyPeriod, logger);
+		logger.log(Status.INFO, " Select 48 Months Warranty" ,  getScreenshot("TC06_Select48MonthsWarranty"));
 		logger.log(Status.PASS, "Select 48 Months Warranty");
 		
 	}
