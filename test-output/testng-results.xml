@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-02-16T22:22:35 IST" name="Suite" finished-at="2022-02-16T22:23:14 IST" duration-ms="39544">
+    <groups>
+    </groups>
+    <test started-at="2022-02-16T22:22:35 IST" name="Test" finished-at="2022-02-16T22:23:14 IST" duration-ms="39544">
+      <class name="DemoProject.CanadaDrives.AppTestsCases.RAM1500TestCases">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:DemoProject.CanadaDrives.AppTestsCases.RAM1500TestCases@298a5e20]" started-at="2022-02-16T22:22:05 IST" name="setUp" finished-at="2022-02-16T22:22:35 IST" duration-ms="29679" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC01_NavigateToURLandSelectOntarioProvince()[pri:0, instance:DemoProject.CanadaDrives.AppTestsCases.RAM1500TestCases@298a5e20]" started-at="2022-02-16T22:22:35 IST" name="TC01_NavigateToURLandSelectOntarioProvince" finished-at="2022-02-16T22:22:36 IST" duration-ms="666" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_NavigateToURLandSelectOntarioProvince -->
+        <test-method signature="TC02_SortByPriceLowToHigh()[pri:1, instance:DemoProject.CanadaDrives.AppTestsCases.RAM1500TestCases@298a5e20]" started-at="2022-02-16T22:22:36 IST" name="TC02_SortByPriceLowToHigh" finished-at="2022-02-16T22:22:40 IST" duration-ms="3942" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC02_SortByPriceLowToHigh -->
+        <test-method signature="TC07_ApplyFilterRAM1500()[pri:2, instance:DemoProject.CanadaDrives.AppTestsCases.RAM1500TestCases@298a5e20]" started-at="2022-02-16T22:22:40 IST" name="TC07_ApplyFilterRAM1500" finished-at="2022-02-16T22:22:44 IST" duration-ms="3973" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC07_ApplyFilterRAM1500 -->
+        <test-method signature="TC03_Favorite3Ram1500Vehicles()[pri:3, instance:DemoProject.CanadaDrives.AppTestsCases.RAM1500TestCases@298a5e20]" started-at="2022-02-16T22:22:44 IST" name="TC03_Favorite3Ram1500Vehicles" finished-at="2022-02-16T22:22:48 IST" duration-ms="4092" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC03_Favorite3Ram1500Vehicles -->
+        <test-method signature="TC04_PickAnAvailableRam1500VehicleAndClickOnPurchase()[pri:4, instance:DemoProject.CanadaDrives.AppTestsCases.RAM1500TestCases@298a5e20]" started-at="2022-02-16T22:22:48 IST" name="TC04_PickAnAvailableRam1500VehicleAndClickOnPurchase" finished-at="2022-02-16T22:22:51 IST" duration-ms="3609" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC04_PickAnAvailableRam1500VehicleAndClickOnPurchase -->
+        <test-method signature="TC06_Select48MonthsWarranty()[pri:5, instance:DemoProject.CanadaDrives.AppTestsCases.RAM1500TestCases@298a5e20]" started-at="2022-02-16T22:22:51 IST" name="TC06_Select48MonthsWarranty" finished-at="2022-02-16T22:23:05 IST" duration-ms="14008" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC06_Select48MonthsWarranty -->
+        <test-method signature="TC05_EnterTorontoAddressInCalculateDelivery()[pri:6, instance:DemoProject.CanadaDrives.AppTestsCases.RAM1500TestCases@298a5e20]" started-at="2022-02-16T22:23:05 IST" name="TC05_EnterTorontoAddressInCalculateDelivery" finished-at="2022-02-16T22:23:14 IST" duration-ms="9212" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC05_EnterTorontoAddressInCalculateDelivery -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:DemoProject.CanadaDrives.AppTestsCases.RAM1500TestCases@298a5e20]" started-at="2022-02-16T22:23:15 IST" name="tearDown" finished-at="2022-02-16T22:23:22 IST" duration-ms="7564" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- DemoProject.CanadaDrives.AppTestsCases.RAM1500TestCases -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
